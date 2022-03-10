@@ -1,31 +1,33 @@
 'use strict';
 
-let answerOne = prompt ('Do I have children? Please use y/yes or n/no for all yes or no questions! Thank you!').toLowerCase();
-if(answerOne === 'y' || answerOne === 'yes'){
-  alert('You were correct! I have a four year old son!');
-  // console.log('user is right, my little guy is 4!');
-} else if(answerOne === 'n' || answerOne === 'no'){
-  alert('Sorry! good guess though!');
-  // console.log('user was incorrect!');
+function childrenQuestion(){
+  let answerOne = prompt ('Do I have children? Please use y/yes or n/no for all yes or no questions! Thank you!').toLowerCase();
+  if(answerOne === 'y' || answerOne === 'yes'){
+    alert('You were correct! I have a four year old son!');
+    // console.log('user is right, my little guy is 4!');
+  } else if(answerOne === 'n' || answerOne === 'no'){
+    alert('Sorry! good guess though!');
+    // console.log('user was incorrect!');
+  }
 }
 
-let answerTwo = prompt ('Am I from Texas?').toLowerCase();
-if(answerTwo === 'y' || answerTwo === 'yes'){
-  alert('Nope! I am a Cali boy to the core!');
-  // console.log('user was correct');
-} else if(answerTwo === 'n' || answerTwo === 'no'){
-  alert('Correct! I am from Los Angeles CA!');
-  // console.log('user was incorrect!');
-}
+  let answerTwo = prompt ('Am I from Texas?').toLowerCase();
+  if(answerTwo === 'y' || answerTwo === 'yes'){
+    alert('Nope! I am a Cali boy to the core!');
+    // console.log('user was correct');
+  } else if(answerTwo === 'n' || answerTwo === 'no'){
+    alert('Correct! I am from Los Angeles CA!');
+    // console.log('user was incorrect!');
+  }
 
-let answerThree = prompt ('Am I interested in video games?').toLowerCase();
-if(answerThree === 'y' || answerThree === 'yes'){
-  alert('Yes! i love video games! Currently playing Horizon!');
-  // console.log('user was correct');
-} else if(answerThree === 'n' || answerThree === 'no'){
-  alert('Nope! sorry! i love video games. like a lot!');
-  // console.log('user was incorrect!');
-}
+  let answerThree = prompt ('Am I interested in video games?').toLowerCase();
+  if(answerThree === 'y' || answerThree === 'yes'){
+    alert('Yes! i love video games! Currently playing Horizon!');
+    // console.log('user was correct');
+  } else if(answerThree === 'n' || answerThree === 'no'){
+    alert('Nope! sorry! i love video games. like a lot!');
+    // console.log('user was incorrect!');
+  }
 
 let answerFour = prompt ('Did i serve in the military?').toLowerCase();
 if(answerFour === 'y' || answerFour === 'yes'){
@@ -88,3 +90,5 @@ let answer = `Welcome ${userName} !`;
 if (userName){
   document.write(`<h2>${answer}</h2>`);
 }
+
+childrenQuestion();
