@@ -41,16 +41,18 @@ function militaryQuestion(){
   } else if(answerFour === 'n' || answerFour === 'no'){
   // console.log('user was incorrect!');
     alert('Sorry! I served 6 years in the Navy!');
-}
+  }
 }
 
-let answerFive = prompt ('Do I love movies?').toLowerCase();
-if(answerFive === 'y' || answerFive === 'yes'){
-  alert('I will binge movies for an entire weekend. They are AMAZING');
-  // console.log('user was correct');
-} else if(answerFive === 'n' || answerFive === 'no'){
-  alert('Cmon.. who does not like movies!?');
-  // console.log('user was incorrect!');
+function movieQuestion(){
+  let answerFive = prompt ('Do I love movies?').toLowerCase();
+  if(answerFive === 'y' || answerFive === 'yes'){
+    alert('I will binge movies for an entire weekend. They are AMAZING');
+    // console.log('user was correct');
+  } else if(answerFive === 'n' || answerFive === 'no'){
+    alert('Cmon.. who does not like movies!?');
+    // console.log('user was incorrect!');
+  }
 }
 
 let myNumber = 26;
@@ -101,3 +103,4 @@ childrenQuestion();
 texasQuestion();
 videoGameQuestion();
 militaryQuestion();
+movieQuestion();
