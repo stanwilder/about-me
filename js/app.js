@@ -77,22 +77,23 @@ function guessMyAge(){
   }
 }
 
-
-let maxRetryTwo = 5;
-let userGuess = false;
-let sevenArr = ['navy', 'army', 'air force', 'marines', 'space force'];
-for (let i = 0; i <= maxRetryTwo; i++){
-  let answerSeven = prompt ('I have an easy one for you. Can you name one of the five branches of the US military?');
-  console.log(answerSeven);
-  for (let j = 0; j < sevenArr.length; j++){
-    console.log(sevenArr[j]);
-    if (answerSeven.toLowerCase() === sevenArr[j]){
-      userGuess = true;
+function militaryBranches(){
+  let maxRetryTwo = 5;
+  let userGuess = false;
+  let sevenArr = ['navy', 'army', 'air force', 'marines', 'space force'];
+  for (let i = 0; i <= maxRetryTwo; i++){
+    let answerSeven = prompt ('I have an easy one for you. Can you name one of the five branches of the US military?');
+    console.log(answerSeven);
+    for (let j = 0; j < sevenArr.length; j++){
+      console.log(sevenArr[j]);
+      if (answerSeven.toLowerCase() === sevenArr[j]){
+        userGuess = true;
+        break;
+      }
+    }
+    if (userGuess){
       break;
     }
-  }
-  if (userGuess){
-    break;
   }
 }
 
@@ -109,3 +110,4 @@ videoGameQuestion();
 militaryQuestion();
 movieQuestion();
 guessMyAge();
+militaryBranches();
