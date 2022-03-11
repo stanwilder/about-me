@@ -12,6 +12,7 @@ function childrenQuestion(){
 }
 
 function texasQuestion(){
+  let answerTwo = prompt ('Am I from Texas?').toLowerCase();
   if(answerTwo === 'y' || answerTwo === 'yes'){
     alert('Nope! I am a Cali boy to the core!');
     // console.log('user was correct');
@@ -19,7 +20,9 @@ function texasQuestion(){
     alert('Correct! I am from Los Angeles CA!');
     // console.log('user was incorrect!');
   }
-  
+}
+
+function videoGameQuestion(){
   let answerThree = prompt ('Am I interested in video games?').toLowerCase();
   if(answerThree === 'y' || answerThree === 'yes'){
     alert('Yes! i love video games! Currently playing Horizon!');
@@ -30,15 +33,15 @@ function texasQuestion(){
   }
 }
 
-  let answerTwo = prompt ('Am I from Texas?').toLowerCase();
-
-let answerFour = prompt ('Did i serve in the military?').toLowerCase();
-if(answerFour === 'y' || answerFour === 'yes'){
-  alert('I did! 6 years in the Navy.');
+function militaryQuestion(){
+  let answerFour = prompt ('Did i serve in the military?').toLowerCase();
+  if(answerFour === 'y' || answerFour === 'yes'){
+    alert('I did! 6 years in the Navy.');
   // console.log('user was correct');
-} else if(answerFour === 'n' || answerFour === 'no'){
+  } else if(answerFour === 'n' || answerFour === 'no'){
   // console.log('user was incorrect!');
-  alert('Sorry! I served 6 years in the Navy!');
+    alert('Sorry! I served 6 years in the Navy!');
+}
 }
 
 let answerFive = prompt ('Do I love movies?').toLowerCase();
@@ -96,3 +99,5 @@ if (userName){
 
 childrenQuestion();
 texasQuestion();
+videoGameQuestion();
+militaryQuestion();
