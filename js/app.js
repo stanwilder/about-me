@@ -55,25 +55,29 @@ function movieQuestion(){
   }
 }
 
-let myNumber = 26;
-let maxRetry = 3;
-for (let i = 0; i < maxRetry; i++){
-  let answerSix = prompt ('How old am I?');
-  if (parseInt (answerSix) === myNumber){
-    alert('Correct!');
-    break;
-    // cosole.log('user was correct');
-  } else if(answerSix < myNumber){
-    alert('Too low!');
-    // console.log('user was too low');
-  } else if(answerSix > myNumber){
-    alert('Too high!');
-    // console.log('user was too high');
-  }
-  if(i === maxRetry){
-    alert('You are out of chances! I am 26!');
+function guessMyAge(){
+  let myNumber = 26;
+  let maxRetry = 3;
+  for (let i = 0; i < maxRetry; i++){
+    let answerSix = prompt ('How old am I?');
+    if (parseInt (answerSix) === myNumber){
+      alert('Correct!');
+      break;
+      // cosole.log('user was correct');
+    } else if(answerSix < myNumber){
+      alert('Too low!');
+      // console.log('user was too low');
+    } else if(answerSix > myNumber){
+      alert('Too high!');
+      // console.log('user was too high');
+    }
+    if(i === maxRetry){
+      alert('You are out of chances! I am 26!');
+    }
   }
 }
+
+
 let maxRetryTwo = 5;
 let userGuess = false;
 let sevenArr = ['navy', 'army', 'air force', 'marines', 'space force'];
@@ -104,3 +108,4 @@ texasQuestion();
 videoGameQuestion();
 militaryQuestion();
 movieQuestion();
+guessMyAge();
