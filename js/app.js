@@ -97,8 +97,10 @@ function militaryBranches(){
   }
 }
 
-let userName = prompt('Welcome to my site! What is your name?');
-let answer = `Welcome ${userName} !`;
+function askUserForName(){
+  let userName = prompt('Welcome to my site! What is your name?');
+  let answer = `Welcome ${userName} !`;
+}
 
 if (userName){
   document.write(`<h2>${answer}</h2>`);
@@ -111,3 +113,4 @@ militaryQuestion();
 movieQuestion();
 guessMyAge();
 militaryBranches();
+askUserForName();
