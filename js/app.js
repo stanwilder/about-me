@@ -11,7 +11,7 @@ function childrenQuestion(){
   }
 }
 
-  let answerTwo = prompt ('Am I from Texas?').toLowerCase();
+function texasQuestion(){
   if(answerTwo === 'y' || answerTwo === 'yes'){
     alert('Nope! I am a Cali boy to the core!');
     // console.log('user was correct');
@@ -19,7 +19,7 @@ function childrenQuestion(){
     alert('Correct! I am from Los Angeles CA!');
     // console.log('user was incorrect!');
   }
-
+  
   let answerThree = prompt ('Am I interested in video games?').toLowerCase();
   if(answerThree === 'y' || answerThree === 'yes'){
     alert('Yes! i love video games! Currently playing Horizon!');
@@ -28,6 +28,9 @@ function childrenQuestion(){
     alert('Nope! sorry! i love video games. like a lot!');
     // console.log('user was incorrect!');
   }
+}
+
+  let answerTwo = prompt ('Am I from Texas?').toLowerCase();
 
 let answerFour = prompt ('Did i serve in the military?').toLowerCase();
 if(answerFour === 'y' || answerFour === 'yes'){
@@ -92,3 +95,4 @@ if (userName){
 }
 
 childrenQuestion();
+texasQuestion();
